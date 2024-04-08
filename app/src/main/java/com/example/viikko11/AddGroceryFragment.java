@@ -29,7 +29,12 @@ public class AddGroceryFragment extends Fragment {
         checkImportant = view.findViewById(R.id.checkImportant);
         buttonAddGrocery = view.findViewById(R.id.buttonAddGrocery);
 
-
+        buttonAddGrocery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addGrocery();
+            }
+        });
 
         return view;
     }
